@@ -14,8 +14,7 @@ public class User {
     private String lastName;
 
     public void setFirstName(String firstName) {
-        if (firstName.length() < 3)
-            throw new CannotProcessOperationException("First name is too short");
+        if (firstName.length() < 3) throw new CannotProcessOperationException("First name is too short");
         this.firstName = firstName;
     }
 }
